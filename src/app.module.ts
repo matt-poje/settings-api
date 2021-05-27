@@ -25,7 +25,7 @@ import { configValidationSchema } from './config.schema';
           },
           type: 'postgres',
           autoLoadEntities: true,
-          synchronize: !isProduction,
+          synchronize: true,
           host: configService.get('PG_HOST'),
           port: configService.get('PG_PORT'),
           username: configService.get('PG_USERNAME'),
